@@ -5,3 +5,8 @@
 
 Example of package installation:
 [![asciicast](https://asciinema.org/a/RfkRdZUgmDaRUBPO6EvYqbcKZ.svg)](https://asciinema.org/a/RfkRdZUgmDaRUBPO6EvYqbcKZ)
+
+To launch games you can operate with commands:
+
+brain-games
+brain-even
