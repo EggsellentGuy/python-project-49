@@ -16,6 +16,7 @@ def even_check(num: int):
         return 'no'
 
 
+# function to chose random simbol
 def generation_calculate_simbol(some_list: list):
     rundom_simvom = random.randint(0, len(COLCULATE_SIMWOLS) - 1)
     return some_list[rundom_simvom]
