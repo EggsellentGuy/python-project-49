@@ -6,7 +6,9 @@
 Example of package installation:
 [![asciicast](https://asciinema.org/a/RfkRdZUgmDaRUBPO6EvYqbcKZ.svg)](https://asciinema.org/a/RfkRdZUgmDaRUBPO6EvYqbcKZ)
 
-To launch games you can operate with commands:
-
+```bash
+# Запуск всех игр
 brain-games
+
+# Запуск игры "Четное число"
 brain-even
