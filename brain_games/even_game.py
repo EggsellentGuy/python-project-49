@@ -3,6 +3,7 @@ from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 import prompt
 
+
 def even_game():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -18,6 +19,7 @@ def even_game():
 
     if correct_answers == 3:
         print(f'Congratulations, {name}')
+
 
 def even_game_main_function(even_int: str, random_int: int):
     print(f'Question: {random_int}')

@@ -5,7 +5,6 @@ import prompt
 from brain_games.constants import COLCULATE_SIMWOLS
 
 
-
 def calc_game():
     name = welcome_user()
     count = 0
@@ -23,11 +22,11 @@ def calc_game():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             break
-
     if count == 3:
         print(f'Congratulations, {name}')
 
-def count_correct_answer(first_argument, second_argument,simvol):
+
+def count_correct_answer(first_argument, second_argument, simvol):
     match simvol:
         case '+':
             return first_argument + second_argument
@@ -35,9 +34,3 @@ def count_correct_answer(first_argument, second_argument,simvol):
             return first_argument - second_argument
         case '*':
             return first_argument * second_argument
-    
-
-        
-
-              
-
