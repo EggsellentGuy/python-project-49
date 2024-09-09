@@ -13,3 +13,7 @@ brain-games
 
 # Запуск игры "Четное число"
 brain-even
+```
+
+Example of winning the game:
+<a href="https://asciinema.org/a/MVIHcgRgfbkJh2t8e7O0hj2eV" target="_blank"><img src="https://asciinema.org/a/MVIHcgRgfbkJh2t8e7O0hj2eV.svg" /></a>
