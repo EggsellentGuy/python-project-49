@@ -1,6 +1,6 @@
 import random
 import prompt
-
+from brain_games.constants import COLCULATE_SIMWOLS
 
 # function to generate random number
 def generating_randint():
@@ -16,14 +16,15 @@ def even_check(num: int):
         return 'no'
 
 
-# the main function of the game "brain even"
-def even_game_main_function(even_int: str, random_int: int):
-    print(f'Question: {random_int}')
-    answer = prompt.string('Your answer ')
-    if even_int == answer.lower():
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answer.lower()}' is wrong answer ;(.\
- Correct answer was '{even_int}'.")
-        return False
+def generation_calculate_question():
+    question = []
+    question.append(str(generating_randint())) 
+    question.append(generation_calculate_simbol(COLCULATE_SIMWOLS))
+    question.append(str(generating_randint()))
+    answer = " ".join(question)
+    return answer
+    
+
+def generation_calculate_simbol(some_list: list):
+    rundom_simvom = random.randint(0, 2)
+    return some_list[rundom_simvom]
