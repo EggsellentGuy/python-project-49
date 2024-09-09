@@ -1,5 +1,4 @@
 import random
-import prompt
 from brain_games.constants import COLCULATE_SIMWOLS
 
 # function to generate random number
