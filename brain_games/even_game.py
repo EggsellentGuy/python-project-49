@@ -1,4 +1,5 @@
-from brain_games.outsourced_functions import generating_randint, even_check, even_game_main_function
+from brain_games.outsourced_functions import generating_randint, even_check
+from brain_games.outsourced_functions import even_game_main_function
 from brain_games.cli import welcome_user
 
 
@@ -17,6 +18,3 @@ def even_game():
 
     if correct_answers == 3:
         print(f'Congratulations, {name}')
-
-
-        
