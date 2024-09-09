@@ -17,3 +17,6 @@ brain-even
 
 Example of winning the game:
 <a href="https://asciinema.org/a/MVIHcgRgfbkJh2t8e7O0hj2eV" target="_blank"><img src="https://asciinema.org/a/MVIHcgRgfbkJh2t8e7O0hj2eV.svg" /></a>
+
+Example of losing the game:
+<a href="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ" target="_blank"><img src="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ.svg" /></a>
