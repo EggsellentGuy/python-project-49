@@ -1,16 +1,16 @@
 from brain_games.cli import welcome_user
-from brain_games.constants import MAX_RAUNDS
+from brain_games.constants import MAX_RAUNDS, COLCULATE_SIMWOLS
 from brain_games.outsourced_functions import generating_randint, generation_calculate_simbol
+from brain_games.outsourced_functions import say_loosing_phrase
 import prompt
-from brain_games.constants import COLCULATE_SIMWOLS
 
 
 def calc_game():
     name = welcome_user()
     count = 0
     for i in range(MAX_RAUNDS):
-        first_argument = generating_randint()
-        second_argument = generating_randint()
+        first_argument = generating_randint(50)
+        second_argument = generating_randint(50)
         simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
         print(f"Question: {first_argument} {simvol} {second_argument}")
         answer = prompt.string('Your answer ')
@@ -20,7 +20,7 @@ def calc_game():
             count += 1
             continue
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            say_loosing_phrase(answer, correct_answer)
             break
     if count == 3:
         print(f'Congratulations, {name}')

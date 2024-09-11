@@ -1,4 +1,5 @@
 from brain_games.outsourced_functions import generating_randint, even_check
+from brain_games.outsourced_functions import say_loosing_phrase
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 import prompt
@@ -28,6 +29,5 @@ def even_game_main_function(even_int: str, random_int: int):
         print('Correct!')
         return True
     else:
-        print(f"'{answer.lower()}' is wrong answer ;(.\
- Correct answer was '{even_int}'.")
+        say_loosing_phrase(answer, even_int)
         return False
