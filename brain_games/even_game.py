@@ -1,5 +1,5 @@
-from brain_games.outsourced_functions import generating_randint, even_check
-from brain_games.outsourced_functions import say_loosing_phrase
+from brain_games.outsourced_functions import generating_randint, even_check, \
+                                             say_loosing_phrase
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 import prompt

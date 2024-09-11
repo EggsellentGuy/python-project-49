@@ -1,7 +1,7 @@
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS, COLCULATE_SIMWOLS
-from brain_games.outsourced_functions import generating_randint, generation_calculate_simbol
-from brain_games.outsourced_functions import say_loosing_phrase
+from brain_games.outsourced_functions import generating_randint,\
+generation_calculate_simbol, say_loosing_phrase
 import prompt
 
 
