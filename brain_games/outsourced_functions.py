@@ -3,7 +3,7 @@ from brain_games.constants import COLCULATE_SIMWOLS
 
 
 # function to generate random number
-def generating_randint(max = 100):
+def generating_randint(max=100):
     num = random.randint(1, max)
     return num
 
@@ -24,5 +24,5 @@ def generation_calculate_simbol(some_list: list):
 
 # function to say phrase if user loose game
 def say_loosing_phrase(user_answer, correct_answer):
-    print(f"'{user_answer.lower()}' is wrong answer ;(.\
+    print(f"'{user_answer.lower()}' is wrong answer ;(. \
  Correct answer was '{correct_answer}'.")

@@ -23,3 +23,6 @@ Example of winning the game:
 
 Example of losing the game:
 <a href="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ" target="_blank"><img src="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ.svg" /></a>
+
+Exampe of playing calc game:
+<a href="https://asciinema.org/a/uR6yABNGML7JE1w81LIVdmTy2" target="_blank"><img src="https://asciinema.org/a/uR6yABNGML7JE1w81LIVdmTy2.svg" /></a>
