@@ -10,7 +10,6 @@ import prompt
 
 def calc_game():
     name = welcome_user()
-    count = 0
     for i in range(MAX_RAUNDS):
         first_argument = generating_randint(50)
         second_argument = generating_randint(50)
@@ -20,12 +19,11 @@ def calc_game():
         correct_answer = count_correct_answer(first_argument, second_argument, simvol)
         if int(correct_answer) == int(answer):
             print('Correct!')
-            count += 1
             continue
         else:
             say_loosing_phrase(answer, correct_answer)
             break
-    if count == MAX_RAUNDS:
+    else:
         print(f'Congratulations, {name}')
 
 
