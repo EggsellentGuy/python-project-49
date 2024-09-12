@@ -21,7 +21,7 @@ def even_game():
         else:
             break
 
-    if correct_answers == 3:
+    if correct_answers == MAX_RAUNDS:
         print(f'Congratulations, {name}')
 
 

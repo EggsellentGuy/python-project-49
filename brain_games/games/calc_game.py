@@ -25,7 +25,7 @@ def calc_game():
         else:
             say_loosing_phrase(answer, correct_answer)
             break
-    if count == 3:
+    if count == MAX_RAUNDS:
         print(f'Congratulations, {name}')
 
 

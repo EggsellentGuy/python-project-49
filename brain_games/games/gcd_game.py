@@ -24,7 +24,7 @@ def gcd_game():
             say_loosing_phrase(answer, count_gcd(first_num, second_num))
             break
 
-    if correct_answers == 3:
+    if correct_answers == MAX_RAUNDS:
         print(f'Congratulations, {name}')
 
 
