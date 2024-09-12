@@ -16,6 +16,9 @@ brain-even
 
 #Запуск игры "Калькулятор"
 brain-calc
+
+#Запуск игры "Наибольший общий делитель (НОД)"
+brain-gcd
 ```
 
 Example of winning the game:
@@ -24,5 +27,8 @@ Example of winning the game:
 Example of losing the game:
 <a href="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ" target="_blank"><img src="https://asciinema.org/a/PkBc56BAAlS3TzdjjlThsQJqZ.svg" /></a>
 
-Exampe of playing calc game:
+Example of playing calc game:
 <a href="https://asciinema.org/a/uR6yABNGML7JE1w81LIVdmTy2" target="_blank"><img src="https://asciinema.org/a/uR6yABNGML7JE1w81LIVdmTy2.svg" /></a>
+
+Example of playing gcd game:
+<a href="https://asciinema.org/a/m0xEr6ydEAuKOxi87KKK3Vq0c" target="_blank"><img src="https://asciinema.org/a/m0xEr6ydEAuKOxi87KKK3Vq0c.svg" /></a>
