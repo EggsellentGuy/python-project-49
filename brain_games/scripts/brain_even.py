@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.even_game import even_game
+from brain_games.games.even_game import even_game
 from brain_games.constants import WELCOME_PHRASE
 
 
