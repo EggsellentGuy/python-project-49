@@ -15,10 +15,10 @@ def progression_game():
             print('Correct!')
             continue
         else:
-            say_loosing_phrase(user_answer, correct_answer)
+            say_loosing_phrase(user_answer, correct_answer, name)
             break
     else:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def generate_progression():

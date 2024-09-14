@@ -19,7 +19,7 @@ def gcd_game():
             print('Correct!')
             continue
         else:
-            say_loosing_phrase(answer, count_gcd(first_num, second_num))
+            say_loosing_phrase(answer, count_gcd(first_num, second_num), name)
             break
     else:
         print(f"Congratulations, {name}!")
