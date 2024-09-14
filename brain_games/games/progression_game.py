@@ -7,7 +7,8 @@ import random
 
 def progression_game():
     name = welcome_user()
-    for i in range(MAX_RAUNDS):
+    print('What number is missing in the progression?')
+    for _ in range(MAX_RAUNDS):
         correct_answer = generate_progression()
         user_answer = prompt.string('Your answer ')
         if int(correct_answer) == int(user_answer):
@@ -32,5 +33,5 @@ def generate_progression():
     progression.insert(rand_index, '..')
     progression_str = map(str, progression)
     progression_str = ' '.join(progression_str)
-    print(f"Question {progression_str}")
+    print(f"Question: {progression_str}")
     return hidden_element

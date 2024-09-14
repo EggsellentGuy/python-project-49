@@ -10,7 +10,7 @@ import prompt
 def gcd_game():
     name = welcome_user()
     print('Find the greatest common divisor of given numbers.')
-    for i in range(MAX_RAUNDS):
+    for _ in range(MAX_RAUNDS):
         first_num = generating_randint(50)
         second_num = generating_randint(50)
         print(f"Question: {first_num} {second_num}")
