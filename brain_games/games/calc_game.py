@@ -10,7 +10,7 @@ import prompt
 
 def calc_game():
     name = welcome_user()
-    for i in range(MAX_RAUNDS):
+    for _ in range(MAX_RAUNDS):
         first_argument = generating_randint(50)
         second_argument = generating_randint(50)
         simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
@@ -27,7 +27,7 @@ def calc_game():
         print(f'Congratulations, {name}')
 
 
-def count_correct_answer(first_argument, second_argument, simvol):
+def count_correct_answer(first_argument: int, second_argument: int, simvol: str):
     match simvol:
         case '+':
             return first_argument + second_argument

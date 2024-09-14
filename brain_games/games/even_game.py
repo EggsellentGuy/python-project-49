@@ -11,7 +11,7 @@ import prompt
 def even_game():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    for i in range(MAX_RAUNDS):
+    for _ in range(MAX_RAUNDS):
         rand_int = generating_randint()
         even_check_randint = even_check(rand_int)
         if even_game_main_function(even_check_randint, rand_int):

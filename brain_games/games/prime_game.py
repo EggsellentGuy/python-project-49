@@ -11,7 +11,7 @@ def prime_game():
         prime_chek_num = generating_randint()
         print(f"Question: {prime_chek_num}")
         user_answer = prompt.string('Your answer ')
-        correct_answer = is_prime(prime_chek_num)
+        correct_answer = is_prime_number(prime_chek_num)
         if user_answer.lower() == correct_answer:
             print('Correct!')
             continue
@@ -22,7 +22,7 @@ def prime_game():
         print(f'Congratulations, {name}')
 
 
-def is_prime(num):
+def is_prime_number(num: int):
     match num:
         case _ if num <= 1:
             return 'no'
