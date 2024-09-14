@@ -20,7 +20,7 @@ def even_game():
             break
 
     else:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def even_game_main_function(even_int: str, random_int: int):
