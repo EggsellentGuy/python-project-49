@@ -24,6 +24,3 @@ def even_game():
             break
     else:
         print(f'Congratulations, {name}!')
-
-
-

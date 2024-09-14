@@ -1,6 +1,8 @@
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
-from brain_games.outsourced_functions import generating_randint, say_loosing_phrase
+from brain_games.outsourced_functions import (
+    generating_randint, say_loosing_phrase
+)
 import prompt
 
 

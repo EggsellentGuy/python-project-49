@@ -17,7 +17,11 @@ def calc_game():
         simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
         print(f"Question: {first_argument} {simvol} {second_argument}")
         answer = prompt.string('Your answer ')
-        correct_answer = count_correct_answer(first_argument, second_argument, simvol)
+        correct_answer = count_correct_answer(
+            first_argument,
+            second_argument,
+            simvol
+        )
         if int(correct_answer) == int(answer):
             print('Correct!')
             continue
@@ -28,7 +32,11 @@ def calc_game():
         print(f'Congratulations, {name}!')
 
 
-def count_correct_answer(first_argument: int, second_argument: int, simvol: str):
+def count_correct_answer(
+    first_argument: int,
+    second_argument: int,
+    simvol: str
+) -> int:
     match simvol:
         case '+':
             return first_argument + second_argument
