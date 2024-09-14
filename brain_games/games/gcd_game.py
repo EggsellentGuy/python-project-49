@@ -21,10 +21,8 @@ def gcd_game():
         else:
             say_loosing_phrase(answer, count_gcd(first_num, second_num))
             break
-
     else:
         print(f'Congratulations, {name}')
-
 
 
 def count_gcd(first_num: int, second_num: int) -> int:
@@ -33,7 +31,3 @@ def count_gcd(first_num: int, second_num: int) -> int:
         first_num = second_num
         second_num = remainder
     return first_num
-
-
-
-
