@@ -19,6 +19,12 @@ brain-calc
 
 #Запуск игры "Наибольший общий делитель (НОД)"
 brain-gcd
+
+#Запуск игры "Прогрессия"
+brain-progression
+
+#Запуск игры "Простое ли число?"
+brain-prime
 ```
 
 Example of winning the game:
@@ -32,3 +38,9 @@ Example of playing calc game:
 
 Example of playing gcd game:
 <a href="https://asciinema.org/a/m0xEr6ydEAuKOxi87KKK3Vq0c" target="_blank"><img src="https://asciinema.org/a/m0xEr6ydEAuKOxi87KKK3Vq0c.svg" /></a>
+
+Example of plaing progression game:
+<a href="https://asciinema.org/a/TLcQdpKE80UzDNVcnRlGrOzQW" target="_blank"><img src="https://asciinema.org/a/TLcQdpKE80UzDNVcnRlGrOzQW.svg" /></a>
+
+Example of plaing prime game:
+<a href="https://asciinema.org/a/Akv9nMiW9wzskchjlcGLNNv2S" target="_blank"><img src="https://asciinema.org/a/Akv9nMiW9wzskchjlcGLNNv2S.svg" /></a>
