@@ -10,6 +10,7 @@ import prompt
 
 def calc_game():
     name = welcome_user()
+    print("What is the result of the expression?")
     for _ in range(MAX_RAUNDS):
         first_argument = generating_randint(50)
         second_argument = generating_randint(50)
