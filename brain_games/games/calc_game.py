@@ -21,10 +21,10 @@ def calc_game():
             print('Correct!')
             continue
         else:
-            say_loosing_phrase(answer, correct_answer)
+            say_loosing_phrase(answer, correct_answer, name)
             break
     else:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 def count_correct_answer(first_argument: int, second_argument: int, simvol: str):

@@ -23,6 +23,6 @@ def generation_calculate_simbol(some_list: list):
 
 
 # function to say phrase if user loose game
-def say_loosing_phrase(user_answer, correct_answer):
+def say_loosing_phrase(user_answer, correct_answer, name):
     print(f"'{user_answer.lower()}' is wrong answer ;(. \
- Correct answer was '{correct_answer}'.")
+ Correct answer was '{correct_answer}'\nLet's try again, {name}!.")
