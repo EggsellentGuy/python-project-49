@@ -21,17 +21,20 @@ def prime_game():
     else:
         print(f'Congratulations, {name}')
 
-
+ 
 def is_prime(num):
-    if num <= 1:
-        return 'no'
-    if num <= 3:
-        return 'yes'
-    if num % 2 == 0 or num % 3 == 0:
-        return 'no'
-    i = 5
-    while i * i <= num:
-        if num % i == 0 or num % (i + 2) == 0:
+    match num:
+        case _ if num <= 1:
             return 'no'
-        i += 6
-    return 'yes'
+        case _ if num <= 3:
+            return 'yes'
+        case _ if num % 2 == 0 or num % 3 == 0:
+            return 'no'
+        case _:
+            i = 5
+            while i * i <= num:
+                if num % i == 0 or num % (i + 2) == 0:
+                    return 'no'
+                i += 6
+            return 'yes'
+
