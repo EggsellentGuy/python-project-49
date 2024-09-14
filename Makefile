@@ -13,8 +13,11 @@ build:
 publish:
 	poetry publish --dry-run
 
-package-install:
+package-install-pipx:
 	pipx install --force dist/*.whl
 
+package-install-pip:
+	pip install --force dist/*.whl
+	
 lint:
 	poetry run flake8 brain_games

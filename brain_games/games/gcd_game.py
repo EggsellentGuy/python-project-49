@@ -22,7 +22,7 @@ def gcd_game():
             say_loosing_phrase(answer, count_gcd(first_num, second_num))
             break
     else:
-        print(f'Congratulations, {name}')
+        print(f"Congratulations, {name}!")
 
 
 def count_gcd(first_num: int, second_num: int) -> int:
