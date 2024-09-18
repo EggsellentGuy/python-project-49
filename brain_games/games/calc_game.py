@@ -1,11 +1,14 @@
 from brain_games.cli import welcome_user
-from brain_games.constants import MAX_RAUNDS, COLCULATE_SIMWOLS
+from brain_games.constants import MAX_RAUNDS
 from brain_games.outsourced_functions import (
     generating_randint,
     generation_calculate_simbol,
     say_loosing_phrase
 )
 import prompt
+
+
+COLCULATE_SIMWOLS = ['+', '-', '*']
 
 
 def calc_game():
