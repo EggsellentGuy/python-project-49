@@ -2,7 +2,7 @@ from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 from brain_games.outsourced_functions import (
     generating_randint,
-    say_loosing_phrase
+    is_user_win
 )
 import prompt
 import random
@@ -25,11 +25,9 @@ def calc_game():
             second_argument,
             simvol
         )
-        if int(correct_answer) == int(answer):
-            print('Correct!')
+        if is_user_win(answer, correct_answer, name):
             continue
         else:
-            say_loosing_phrase(answer, correct_answer, name)
             break
     else:
         print(f'Congratulations, {name}!')

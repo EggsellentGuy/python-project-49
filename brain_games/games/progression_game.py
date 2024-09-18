@@ -1,5 +1,5 @@
 from brain_games.cli import welcome_user
-from brain_games.outsourced_functions import say_loosing_phrase
+from brain_games.outsourced_functions import is_user_win
 from brain_games.constants import MAX_RAUNDS
 import prompt
 import random
@@ -11,11 +11,9 @@ def progression_game():
     for _ in range(MAX_RAUNDS):
         correct_answer = generate_progression()
         user_answer = prompt.string('Your answer ')
-        if int(correct_answer) == int(user_answer):
-            print('Correct!')
+        if is_user_win(user_answer, correct_answer, name):
             continue
         else:
-            say_loosing_phrase(user_answer, correct_answer, name)
             break
     else:
         print(f'Congratulations, {name}!')

@@ -15,7 +15,12 @@ def even_check(num: int):
         return 'no'
 
 
-# function to say phrase if user loose game
-def say_loosing_phrase(user_answer, correct_answer, name):
-    print(f"'{user_answer.lower()}' is wrong answer ;(. \
+# function check losse or win
+def is_user_win(user_answer, correct_answer, name):
+    if str(correct_answer) == str(user_answer):
+        print('Correct!')
+        return True
+    else:
+        print(f"'{user_answer.lower()}' is wrong answer ;(. \
  Correct answer was '{correct_answer}'\nLet's try again, {name}!.")
+        return False

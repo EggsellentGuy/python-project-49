@@ -1,7 +1,7 @@
 from brain_games.outsourced_functions import (
     generating_randint,
     even_check,
-    say_loosing_phrase
+    is_user_win
 )
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
@@ -16,11 +16,10 @@ def even_game():
         print(f"Question: {rand_int}")
         even_check_randint = even_check(rand_int)
         answer = prompt.string('Your answer ')
-        if even_check_randint == answer.lower():
-            print('Correct!')
+        if is_user_win(answer, even_check_randint, name):
             continue
         else:
-            say_loosing_phrase(answer, even_check_randint, name)
             break
+
     else:
         print(f'Congratulations, {name}!')

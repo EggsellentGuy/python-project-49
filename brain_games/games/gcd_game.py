@@ -2,7 +2,7 @@ from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 from brain_games.outsourced_functions import (
     generating_randint,
-    say_loosing_phrase
+    is_user_win
 )
 import prompt
 
@@ -15,11 +15,9 @@ def gcd_game():
         second_num = generating_randint(50)
         print(f"Question: {first_num} {second_num}")
         answer = prompt.string('Your answer ')
-        if int(answer) == int(count_gcd(first_num, second_num)):
-            print('Correct!')
+        if is_user_win(answer, count_gcd(first_num, second_num), name):
             continue
         else:
-            say_loosing_phrase(answer, count_gcd(first_num, second_num), name)
             break
     else:
         print(f"Congratulations, {name}!")

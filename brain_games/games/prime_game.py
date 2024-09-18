@@ -1,7 +1,7 @@
 from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 from brain_games.outsourced_functions import (
-    generating_randint, say_loosing_phrase
+    generating_randint, is_user_win
 )
 import prompt
 
@@ -14,11 +14,9 @@ def prime_game():
         print(f"Question: {prime_chek_num}")
         user_answer = prompt.string('Your answer ')
         correct_answer = is_prime_number(prime_chek_num)
-        if user_answer.lower() == correct_answer:
-            print('Correct!')
+        if is_user_win(user_answer, correct_answer, name):
             continue
         else:
-            say_loosing_phrase(user_answer, correct_answer, name)
             break
     else:
         print(f'Congratulations, {name}!')
