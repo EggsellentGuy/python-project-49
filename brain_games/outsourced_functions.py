@@ -1,4 +1,3 @@
-from brain_games.constants import COLCULATE_SIMWOLS
 import random
 
 
@@ -14,12 +13,6 @@ def even_check(num: int):
         return 'yes'
     else:
         return 'no'
-
-
-# function to chose random simbol
-def generation_calculate_simbol(some_list: list):
-    rundom_simvom = random.randint(0, len(COLCULATE_SIMWOLS) - 1)
-    return some_list[rundom_simvom]
 
 
 # function to say phrase if user loose game

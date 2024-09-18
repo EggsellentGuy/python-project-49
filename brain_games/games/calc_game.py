@@ -2,10 +2,10 @@ from brain_games.cli import welcome_user
 from brain_games.constants import MAX_RAUNDS
 from brain_games.outsourced_functions import (
     generating_randint,
-    generation_calculate_simbol,
     say_loosing_phrase
 )
 import prompt
+import random
 
 
 COLCULATE_SIMWOLS = ['+', '-', '*']
@@ -47,3 +47,8 @@ def count_correct_answer(
             return first_argument - second_argument
         case '*':
             return first_argument * second_argument
+
+
+def generation_calculate_simbol(some_list: list):
+    rundom_simvom = random.randint(0, len(COLCULATE_SIMWOLS) - 1)
+    return some_list[rundom_simvom]
