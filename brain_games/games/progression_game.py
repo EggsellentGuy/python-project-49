@@ -1,29 +1,19 @@
-from brain_games.cli import welcome_user
-from brain_games.outsourced_functions import is_user_win
-from brain_games.constants import MAX_RAUNDS
-import prompt
 import random
 
 
-def progression_game():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-    for _ in range(MAX_RAUNDS):
-        correct_answer = generate_progression()
-        user_answer = prompt.string('Your answer ')
-        if is_user_win(user_answer, correct_answer, name):
-            continue
-        else:
-            break
-    else:
-        print(f'Congratulations, {name}!')
+PROGRESSION_QUESTION_CONST = 'What number is missing in the progression?'
+
+
+def Question_Generator_Progression():
+    correct_answer = generate_progression()
+    return correct_answer
 
 
 def generate_progression():
     progression = []
     start = random.randint(1, 20)
     step = random.randint(1, 15)
-    for i in range(10):
+    for _ in range(10):
         progression.append(start)
         start += step
     rand_index = random.randint(0, len(progression) - 1)

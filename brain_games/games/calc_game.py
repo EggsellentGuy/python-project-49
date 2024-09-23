@@ -1,43 +1,28 @@
-from brain_games.cli import welcome_user
-from brain_games.constants import MAX_RAUNDS
-from brain_games.outsourced_functions import (
-    generating_randint,
-    is_user_win
-)
-import prompt
 import random
 
 
 COLCULATE_SIMWOLS = ['+', '-', '*']
+CALC_QUESTION_CONST = "What is the result of the expression?"
 
 
-def calc_game():
-    name = welcome_user()
-    print("What is the result of the expression?")
-    for _ in range(MAX_RAUNDS):
-        first_argument = generating_randint(50)
-        second_argument = generating_randint(50)
-        simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
-        print(f"Question: {first_argument} {simvol} {second_argument}")
-        answer = prompt.string('Your answer ')
-        correct_answer = count_correct_answer(
-            first_argument,
-            second_argument,
-            simvol
-        )
-        if is_user_win(answer, correct_answer, name):
-            continue
-        else:
-            break
-    else:
-        print(f'Congratulations, {name}!')
+def Question_Generator_Calc():
+    first_argument = random.randint(1, 50)
+    second_argument = random.randint(1, 50)
+    simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
+    print(f"Question: {first_argument} {simvol} {second_argument}")
+    correct_answer = count_correct_answer(
+        first_argument,  # Уменьшил отступ
+        second_argument,
+        simvol
+    )
+    return correct_answer
 
 
 def count_correct_answer(
     first_argument: int,
     second_argument: int,
     simvol: str
-) -> int:
+):
     match simvol:
         case '+':
             return first_argument + second_argument

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-from brain_games.games.calc_game import calc_game
-from brain_games.constants import WELCOME_PHRASE
+from brain_games.games.calc_game import (
+    CALC_QUESTION_CONST,
+    Question_Generator_Calc
+)
+from brain_games.main_game_func import main_game_function
 
 
 def main():
-    print(WELCOME_PHRASE)
-    calc_game()
+    main_game_function(Question_Generator_Calc, CALC_QUESTION_CONST)
 
 
 if __name__ == '__main__':

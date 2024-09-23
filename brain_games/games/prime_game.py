@@ -1,25 +1,13 @@
-from brain_games.cli import welcome_user
-from brain_games.constants import MAX_RAUNDS
-from brain_games.outsourced_functions import (
-    generating_randint, is_user_win
-)
-import prompt
+import random
+
+PRIME_QUESTION_CONST = 'Answer "yes" if given number is prime. \
+Otherwise answer "no".'
 
 
-def prime_game():
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    for _ in range(MAX_RAUNDS):
-        prime_chek_num = generating_randint()
-        print(f"Question: {prime_chek_num}")
-        user_answer = prompt.string('Your answer ')
-        correct_answer = is_prime_number(prime_chek_num)
-        if is_user_win(user_answer, correct_answer, name):
-            continue
-        else:
-            break
-    else:
-        print(f'Congratulations, {name}!')
+def Question_Generator_Prime():
+    prime_chek_num = random.randint(1, 100)
+    print(f"Question: {prime_chek_num}")
+    return is_prime_number(prime_chek_num)
 
 
 def is_prime_number(num: int):
