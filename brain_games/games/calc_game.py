@@ -9,13 +9,13 @@ def Question_Generator_Calc():
     first_argument = random.randint(1, 50)
     second_argument = random.randint(1, 50)
     simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
-    print(f"Question: {first_argument} {simvol} {second_argument}")
+    expression = f"{first_argument} {simvol} {second_argument}"
     correct_answer = count_correct_answer(
-        first_argument,  # Уменьшил отступ
+        first_argument,
         second_argument,
         simvol
     )
-    return correct_answer
+    return expression, correct_answer
 
 
 def count_correct_answer(

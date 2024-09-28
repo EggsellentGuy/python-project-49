@@ -6,8 +6,8 @@ Otherwise answer "no".'
 
 def Question_Generator_Prime():
     prime_chek_num = random.randint(1, 100)
-    print(f"Question: {prime_chek_num}")
-    return is_prime_number(prime_chek_num)
+    expression = f"{prime_chek_num}"
+    return expression, is_prime_number(prime_chek_num)
 
 
 def is_prime_number(num: int):

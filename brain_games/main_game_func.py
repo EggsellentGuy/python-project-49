@@ -8,7 +8,8 @@ def main_game_function(question_func, game_rules):
     print(f'Hello, {name}')
     print(game_rules)
     for _ in range(MAX_RAUNDS):
-        correct_answer = question_func()
+        question, correct_answer = question_func()
+        print(f"Question: {question}")
         user_answer = prompt.string('Your answer ')
         if str(correct_answer) == str(user_answer):
             print('Correct!')

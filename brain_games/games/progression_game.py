@@ -5,8 +5,8 @@ PROGRESSION_RULES = 'What number is missing in the progression?'
 
 
 def Question_Generator_Progression():
-    correct_answer = generate_progression()
-    return correct_answer
+    expression, correct_answer = generate_progression()
+    return expression, correct_answer
 
 
 def generate_progression():
@@ -21,5 +21,5 @@ def generate_progression():
     progression.insert(rand_index, '..')
     progression_str = map(str, progression)
     progression_str = ' '.join(progression_str)
-    print(f"Question: {progression_str}")
-    return hidden_element
+    expression = f"{progression_str}"
+    return expression, hidden_element

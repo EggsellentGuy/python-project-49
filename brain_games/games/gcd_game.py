@@ -7,8 +7,8 @@ GCD_RULES = 'Find the greatest common divisor of given numbers.'
 def Question_Generator_Gcd():
     first_num = random.randint(1, 50)
     second_num = random.randint(1, 50)
-    print(f"Question: {first_num} {second_num}")
-    return count_gcd(first_num, second_num)
+    expression = f"{first_num} {second_num}"
+    return expression, count_gcd(first_num, second_num)
 
 
 def count_gcd(first_num: int, second_num: int) -> int:

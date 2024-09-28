@@ -7,12 +7,12 @@ otherwise answer "no".'
 
 def Question_Generator_Even():
     rand_int = random.randint(1, 100)
-    print(f"Question: {rand_int}")
+    expression = f"{rand_int}"
     even_check_randint = even_check(rand_int)
     if even_check_randint:
-        return 'yes'
+        return expression, 'yes'
     else:
-        return 'no'
+        return expression, 'no'
 
 
 def even_check(num: int):
