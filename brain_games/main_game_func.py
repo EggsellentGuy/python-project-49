@@ -2,11 +2,11 @@ import prompt
 from brain_games.constants import MAX_RAUNDS, WELCOME_PHRASE
 
 
-def main_game_function(question_func, CONSTANT):
+def main_game_function(question_func, game_rules):
     print(WELCOME_PHRASE)
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    print(CONSTANT)
+    print(game_rules)
     for _ in range(MAX_RAUNDS):
         correct_answer = question_func()
         user_answer = prompt.string('Your answer ')

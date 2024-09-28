@@ -1,6 +1,6 @@
 import random
 
-PRIME_QUESTION_CONST = 'Answer "yes" if given number is prime. \
+PRIME_RULES = 'Answer "yes" if given number is prime. \
 Otherwise answer "no".'
 
 

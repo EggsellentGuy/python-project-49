@@ -1,7 +1,7 @@
 import random
 
 
-EVEN_QUESTION_CONST = 'Answer "yes" if the number is even, \
+EVEN_RULES = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
 
 

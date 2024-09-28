@@ -1,7 +1,7 @@
 import random
 
 
-PROGRESSION_QUESTION_CONST = 'What number is missing in the progression?'
+PROGRESSION_RULES = 'What number is missing in the progression?'
 
 
 def Question_Generator_Progression():

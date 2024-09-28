@@ -1,7 +1,7 @@
 import random
 
 
-GCD_QUESTION_CONST = 'Find the greatest common divisor of given numbers.'
+GCD_RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def Question_Generator_Gcd():

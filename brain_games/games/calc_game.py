@@ -2,7 +2,7 @@ import random
 
 
 COLCULATE_SIMWOLS = ['+', '-', '*']
-CALC_QUESTION_CONST = "What is the result of the expression?"
+CALC_RULES = "What is the result of the expression?"
 
 
 def Question_Generator_Calc():
