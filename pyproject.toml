@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "This project is a small set of console intellectual games. After installation and building with console commands, you can launch one of five games."
 authors = ["Ivan <ivanrossi112@gmail.com>"]
 readme = "README.md"
 packages = [
