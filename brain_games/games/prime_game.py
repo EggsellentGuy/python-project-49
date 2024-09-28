@@ -7,21 +7,21 @@ Otherwise answer "no".'
 def Question_Generator_Prime():
     prime_chek_num = random.randint(1, 100)
     expression = f"{prime_chek_num}"
-    return expression, is_prime_number(prime_chek_num)
+    value = is_prime_number(prime_chek_num)
+    answer = 'yes' if value else 'no'
+    return expression, answer
 
 
-def is_prime_number(num: int):
-    match num:
-        case _ if num <= 1:
-            return 'no'
-        case _ if num <= 3:
-            return 'yes'
-        case _ if num % 2 == 0 or num % 3 == 0:
-            return 'no'
-        case _:
-            i = 5
-            while i * i <= num:
-                if num % i == 0 or num % (i + 2) == 0:
-                    return 'no'
-                i += 6
-            return 'yes'
+def is_prime_number(num: int) -> bool:
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True

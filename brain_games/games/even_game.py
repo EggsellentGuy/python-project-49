@@ -8,12 +8,10 @@ otherwise answer "no".'
 def Question_Generator_Even():
     rand_int = random.randint(1, 100)
     expression = f"{rand_int}"
-    even_check_randint = even_check(rand_int)
-    if even_check_randint:
-        return expression, 'yes'
-    else:
-        return expression, 'no'
+    value = even_check(rand_int)
+    answer = 'yes' if value else 'no'
+    return expression, answer
 
 
-def even_check(num: int):
+def even_check(num: int) -> bool:
     return num % 2 == 0
