@@ -1,3 +1,6 @@
+This project is a small set of console intellectual games. After installing the package and building it with console commands, you will be able to launch one of five games. I hope you will enjoy trying them.
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/EggsellentGuy/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/EggsellentGuy/python-project-49/actions)
 
