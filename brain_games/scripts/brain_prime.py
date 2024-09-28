@@ -4,7 +4,7 @@ from brain_games.games import prime_game
 
 
 def main():
-    main_game_function(prime_game.Question_Generator_Prime, 
+    main_game_function(prime_game.Question_Generator_Prime,
                        prime_game.PRIME_RULES)
 
 
