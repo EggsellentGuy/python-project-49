@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 from brain_games.main_game_func import main_game_function
-from brain_games.games.even_game import (
-    EVEN_RULES,
-    Question_Generator_Even
-)
+from brain_games.games import even_game
 
 
 def main():
-    main_game_function(Question_Generator_Even, EVEN_RULES)
+    main_game_function(even_game.Question_Generator_Even, 
+                       even_game.EVEN_RULES)
 
 
 if __name__ == '__main__':
