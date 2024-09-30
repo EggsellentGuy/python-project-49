@@ -1,10 +1,10 @@
 import random
 
 
-PROGRESSION_RULES = 'What number is missing in the progression?'
+GAME_RULES = 'What number is missing in the progression?'
 
 
-def Question_Generator_Progression():
+def Generate_question():
     expression, correct_answer = generate_progression()
     return expression, correct_answer
 

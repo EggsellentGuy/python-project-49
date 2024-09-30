@@ -4,8 +4,7 @@ from brain_games.games import gcd_game
 
 
 def main():
-    main_game_function(gcd_game.Question_Generator_Gcd,
-                       gcd_game.GCD_RULES)
+    main_game_function(gcd_game)
 
 
 if __name__ == '__main__':

@@ -4,8 +4,7 @@ from brain_games.games import progression_game
 
 
 def main():
-    main_game_function(progression_game.Question_Generator_Progression,
-                       progression_game.PROGRESSION_RULES)
+    main_game_function(progression_game)
 
 
 if __name__ == '__main__':

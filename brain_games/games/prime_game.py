@@ -1,10 +1,10 @@
 import random
 
-PRIME_RULES = 'Answer "yes" if given number is prime. \
+GAME_RULES = 'Answer "yes" if given number is prime. \
 Otherwise answer "no".'
 
 
-def Question_Generator_Prime():
+def Generate_question():
     prime_chek_num = random.randint(1, 100)
     expression = f"{prime_chek_num}"
     value = is_prime_number(prime_chek_num)

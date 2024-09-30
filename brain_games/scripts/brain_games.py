@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
-from brain_games.constants import WELCOME_PHRASE
+from brain_games.main_game_func import WELCOME_PHRASE
 
 
 def main():

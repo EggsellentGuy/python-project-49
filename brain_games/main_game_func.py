@@ -1,19 +1,21 @@
 import prompt
-from brain_games.constants import MAX_RAUNDS, WELCOME_PHRASE
 
 
-def main_game_function(question_func, game_rules):
+MAX_RAUNDS = 3
+WELCOME_PHRASE = 'Welcome to the Brain Games!'
+
+
+def main_game_function(game_import):
     print(WELCOME_PHRASE)
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    print(game_rules)
+    print(game_import.GAME_RULES)
     for _ in range(MAX_RAUNDS):
-        question, correct_answer = question_func()
+        question, correct_answer = game_import.Generate_question()
         print(f"Question: {question}")
         user_answer = prompt.string('Your answer ')
         if str(correct_answer) == str(user_answer):
             print('Correct!')
-            continue
         else:
             print(f"'{user_answer.lower()}' is wrong answer ;(. \
  Correct answer was '{correct_answer}'\nLet's try again, {name}!.")

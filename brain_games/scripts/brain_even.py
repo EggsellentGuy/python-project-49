@@ -4,8 +4,7 @@ from brain_games.games import even_game
 
 
 def main():
-    main_game_function(even_game.Question_Generator_Even,
-                       even_game.EVEN_RULES)
+    main_game_function(even_game)
 
 
 if __name__ == '__main__':

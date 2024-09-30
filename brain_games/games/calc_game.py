@@ -2,13 +2,13 @@ import random
 
 
 COLCULATE_SIMWOLS = ['+', '-', '*']
-CALC_RULES = "What is the result of the expression?"
+GAME_RULES = "What is the result of the expression?"
 
 
-def Question_Generator_Calc():
+def Generate_question():
     first_argument = random.randint(1, 50)
     second_argument = random.randint(1, 50)
-    simvol = generation_calculate_simbol(COLCULATE_SIMWOLS)
+    simvol = random.choice(COLCULATE_SIMWOLS)
     expression = f"{first_argument} {simvol} {second_argument}"
     correct_answer = count_correct_answer(
         first_argument,
@@ -23,15 +23,13 @@ def count_correct_answer(
     second_argument: int,
     simvol: str
 ):
-    match simvol:
-        case '+':
-            return first_argument + second_argument
-        case '-':
-            return first_argument - second_argument
-        case '*':
-            return first_argument * second_argument
-
-
-def generation_calculate_simbol(some_list: list):
-    rundom_simvom = random.randint(0, len(COLCULATE_SIMWOLS) - 1)
-    return some_list[rundom_simvom]
+    try:
+        match simvol:
+            case '+':
+                return first_argument + second_argument
+            case '-':
+                return first_argument - second_argument
+            case '*':
+                return first_argument * second_argument
+    except (ValueError, SyntaxError):
+        print("Use only symbols for mathematical operations")
