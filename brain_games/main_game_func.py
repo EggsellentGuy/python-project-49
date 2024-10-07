@@ -5,13 +5,13 @@ MAX_RAUNDS = 3
 WELCOME_PHRASE = 'Welcome to the Brain Games!'
 
 
-def main_game_function(game_import):
+def play_games(games_args):
     print(WELCOME_PHRASE)
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    print(game_import.GAME_RULES)
+    print(games_args.GAME_RULES)
     for _ in range(MAX_RAUNDS):
-        question, correct_answer = game_import.Generate_question()
+        question, correct_answer = games_args.generate_question()
         print(f"Question: {question}")
         user_answer = prompt.string('Your answer ')
         if str(correct_answer) == str(user_answer):

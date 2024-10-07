@@ -5,7 +5,7 @@ COLCULATE_SIMWOLS = ['+', '-', '*']
 GAME_RULES = "What is the result of the expression?"
 
 
-def Generate_question():
+def generate_question():
     first_argument = random.randint(1, 50)
     second_argument = random.randint(1, 50)
     simvol = random.choice(COLCULATE_SIMWOLS)

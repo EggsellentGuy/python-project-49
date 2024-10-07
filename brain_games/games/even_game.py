@@ -5,7 +5,7 @@ GAME_RULES = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
 
 
-def Generate_question():
+def generate_question():
     rand_int = random.randint(1, 100)
     expression = f"{rand_int}"
     value = even_check(rand_int)
