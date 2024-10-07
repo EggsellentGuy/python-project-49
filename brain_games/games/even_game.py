@@ -13,5 +13,5 @@ def generate_question():
     return expression, answer
 
 
-def even_check(num: int) -> bool:
+def even_check(num):
     return num % 2 == 0

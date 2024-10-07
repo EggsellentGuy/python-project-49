@@ -11,7 +11,7 @@ def generate_question():
     return expression, count_gcd(first_num, second_num)
 
 
-def count_gcd(first_num: int, second_num: int) -> int:
+def count_gcd(first_num, second_num):
     while second_num != 0:
         remainder = first_num % second_num
         first_num = second_num

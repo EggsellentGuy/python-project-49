@@ -12,7 +12,7 @@ def generate_question():
     return expression, answer
 
 
-def is_prime_number(num: int) -> bool:
+def is_prime_number(num):
     if num <= 1 or num % 2 == 0 or num % 3 == 0:
         return False
     if num <= 3:
