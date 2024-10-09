@@ -16,8 +16,7 @@ def generate_question():
 def is_prime_number(num):
     if num < 2:
         return False
-    for i in range(2, int(sqrt(num))+ 1):
+    for i in range(2, int(sqrt(num)) + 1):
         if num % i == 0:
             return False
     return True
-
