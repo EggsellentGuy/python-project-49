@@ -16,9 +16,9 @@ def generate_progression():
     for _ in range(10):
         progression.append(start)
         start += step
-    rand_index = random.randint(0, len(progression) - 1)
-    hidden_element = progression.pop(rand_index)
-    progression.insert(rand_index, '..')
+    rand_index = random.randint(0, len(progression))
+    hidden_element = progression[rand_index]
+    progression[rand_index] = '..'
     progression_str = map(str, progression)
     progression_str = ' '.join(progression_str)
     expression = f"{progression_str}"
